@@ -1,0 +1,5 @@
+# CPU actor, synthetic upper-level allocation example and lower-level filtering.
+# The historical JAX/training stack is reference information, not required here.
+numpy==1.26.4
+scipy==1.13.1
+osqp==1.1.3

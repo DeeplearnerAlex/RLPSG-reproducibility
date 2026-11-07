@@ -1,0 +1,36 @@
+Author environment reference
+
+This is a record of the full author-side numerical environment, not the runtime
+requirements of the NumPy actor and upper-level demonstration. Install the
+top-level requirements.txt for that example. No JAX or GPU is required by it.
+
+Operating system: Ubuntu 22.04.5 under WSL2
+Python: 3.10.12
+NumPy: 1.26.4
+SciPy: 1.13.1
+Matplotlib: 3.9.4
+OSQP: 1.1.3
+Pillow: 12.3.0
+
+Original training and frozen JAX evaluation environment:
+JAX: 0.4.25
+jaxlib: 0.4.25+cuda11.cudnn86
+CUDA: 11.8
+Flax: 0.8.2
+Optax: 0.2.2
+Chex: 0.1.86
+Orbax Checkpoint: 0.5.9
+Gymnax: 0.0.8
+Distrax: 0.1.5
+TensorboardX: 2.6.2.2
+Protobuf: 4.25.5
+
+The original CUDA wheel source is the official JAX wheel archive. Compatibility
+depends on Python version, operating system, GPU driver, and selected wheel.
+These references do not assert that the full original training or experimental
+pipeline is included in this code-only repository.
+
+The supplied NPZ models are actor-only exports with frozen observation
+normalization, target distribution, and edge ordering. They do not contain the
+critic, optimizer, training logs, manuscript raw trial data, baseline comparisons,
+or audit material. No complete cross-platform regression-test claim is made.

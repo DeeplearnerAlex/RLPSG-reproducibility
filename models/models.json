@@ -1,0 +1,49 @@
+{
+  "models": [
+    {
+      "target": "ring",
+      "file": "ring.npz",
+      "sha256": "696842f42d414b1c0c7bc7aee4b5f209aa2d5566d0ec5103f6f82d9610758416",
+      "bytes": 2611060,
+      "architecture": "65-512-512-512-274",
+      "activation": "GELU tanh approximation",
+      "normalization": "LayerNorm epsilon 1e-6",
+      "input": "64 bin densities followed by smoothed Hellinger distance",
+      "output": "210 signed inter-bin edges and 64 self-transition weights",
+      "source_checkpoint_sha256": "0641abda1cbb741d827902ea5634eb53fae794126ba38f5f917b8885e8379c79",
+      "source_network_sha256": "75e36b3126e8a6832e9918236f822ea54a0f67e2d64c23abe620f442654d34ca",
+      "frozen_optimizer_step": 48830,
+      "included": "Actor parameters and frozen observation normalization only"
+    },
+    {
+      "target": "letter_A",
+      "file": "letter_A.npz",
+      "sha256": "375e8919e8cccda0a2c0c96495c62c753bf9c555588c97cb87238d7b2166e828",
+      "bytes": 2610870,
+      "architecture": "65-512-512-512-274",
+      "activation": "GELU tanh approximation",
+      "normalization": "LayerNorm epsilon 1e-6",
+      "input": "64 bin densities followed by smoothed Hellinger distance",
+      "output": "210 signed inter-bin edges and 64 self-transition weights",
+      "source_checkpoint_sha256": "b0a56da53e9e36fdb1c8398b627df5c4ee6bf5cc996c77214914b9f9a970da10",
+      "source_network_sha256": "75e36b3126e8a6832e9918236f822ea54a0f67e2d64c23abe620f442654d34ca",
+      "frozen_optimizer_step": 48830,
+      "included": "Actor parameters and frozen observation normalization only"
+    },
+    {
+      "target": "separated",
+      "file": "separated.npz",
+      "sha256": "336048e6c067fa57bd6d16e43a0b57e5ef137a538ae467914840fe3656aa9479",
+      "bytes": 2610606,
+      "architecture": "65-512-512-512-274",
+      "activation": "GELU tanh approximation",
+      "normalization": "LayerNorm epsilon 1e-6",
+      "input": "64 bin densities followed by smoothed Hellinger distance",
+      "output": "210 signed inter-bin edges and 64 self-transition weights",
+      "source_checkpoint_sha256": "cc455411b164cd881cffe2ea8046c970d312c2b724de63d28bf0b34c7a8f24c4",
+      "source_network_sha256": "75e36b3126e8a6832e9918236f822ea54a0f67e2d64c23abe620f442654d34ca",
+      "frozen_optimizer_step": 48830,
+      "included": "Actor parameters and frozen observation normalization only"
+    }
+  ]
+}

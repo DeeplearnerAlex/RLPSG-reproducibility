@@ -1,0 +1,12 @@
+# Normal documentation remains text. Preserve copied implementation/model bytes.
+* text=auto
+*.py text eol=lf
+*.md text eol=lf
+README.md text eol=lf
+requirements.txt text eol=lf
+environment-reference.txt text eol=lf
+.gitignore text eol=lf
+.gitattributes text eol=lf
+src/** -text
+models/** -text
+third_party/** -text

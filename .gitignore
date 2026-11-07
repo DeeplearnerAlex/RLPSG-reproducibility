@@ -1,0 +1,43 @@
+# Local environments and Python caches
+.venv/
+.venv-*/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Newly generated demonstrations and local outputs
+/demo_outputs/
+/outputs/
+/runs/
+*.log
+
+# Local native builds; keep companion source files
+*.so
+*.dll
+*.dylib
+*.o
+*.obj
+
+# Manuscript experiment archives are outside this code-only distribution
+/revision_experiments/
+/diagnostics/
+/results*/
+*.zip
+*.tar
+*.tar.gz
+*.7z
+
+# Editor and operating-system files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Credentials must never be committed
+.env
+.env.*
+*.pem
+id_rsa*
+id_ed25519*
+.git-credentials
